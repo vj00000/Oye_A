@@ -1,11 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
-
-const url = 'mongodb://localhost:27017';
+require('dotenv').config()
 const dbName = 'MOVIES';
 
 const connectDB = async () => {
   try {
-    const client = await MongoClient.connect(url);
+    const client = await MongoClient.connect(process.env.uri);
     const db = client.db(dbName);
     return db;
   } catch (err) {
