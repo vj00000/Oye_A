@@ -1,6 +1,7 @@
 ### To Locally setup this Project, One Must have Node and MongoBD compass installed on PC
 ### npm init -y
 ### npm install express body-parser mongodb
+### PASTE CONNECTION STRING IN .env File
 ### node app.js
 
 controller folder has "apiController.js" (Responsible for all routes)
